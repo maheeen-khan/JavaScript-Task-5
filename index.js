@@ -111,3 +111,16 @@ for(var k = devices.length-1; k >= 0; k--){
 }
 
 
+//Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:
+
+var phones = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+//<select name="ph" id="ph">
+document.write("<br><hr><br><select name='ph' id='ph'>");
+
+//<option value="ph">phones[m]</option>
+for(var m = 0; m < phones.length; m++){
+    document.write("<option value='ph'>" + phones[m]+ "</option>");
+}
+
+document.write("</select>");
