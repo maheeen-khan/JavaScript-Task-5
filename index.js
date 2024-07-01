@@ -89,6 +89,8 @@ var cityNames = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
 document.write("<br><hr><br><b>Cities List : </b>"+ cityNames);
 document.write("<br><b>Selected Cities List : </b>"+ cityNames.slice(2,4));
 
+
+
 //Write a program to create a single string from the below mentioned array:
 
 var arr = ["This", "is", "my", "cat"];
@@ -97,5 +99,15 @@ document.write("<br><hr><br><b>Array : </b>"+ arr);
 document.write("<br><b>String : </b>"+ arr.join(" "));
 
 
+
+//Create a new array. Store values one by one in such a way that you can access the values in reverse order. (Last In- First Out)
+
+var devices = ["Keyboard", "Mouse", "Printer", "Monintor"];
+
+document.write("<br><hr><br>");
+
+for(var k = devices.length-1; k >= 0; k--){
+    document.write("<br>"+ devices[k]);
+}
 
 
