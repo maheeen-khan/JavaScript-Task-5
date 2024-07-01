@@ -1,5 +1,3 @@
-
-        
 var studentNames = []; //Declare an empty array using JS literal notation to store student names in future.
 
 
@@ -26,6 +24,8 @@ for(var i=0; i<education.length; i++){
     document.write(i+1 + ") " + education[i] + "<br>");
 }
 
+
+
 //Write a program to store 3 student names in an array.Take another array to store score of these three students. Assume that total marks are 500 for each student, display the scores & percentages of students
 var stdNames = ["Michael", "John", "Tony"];
 var stdScores = [320, 230, 480];
@@ -41,6 +41,7 @@ document.write("<br><h2>Student Report: </h2>");
 for(var i = 0; i< stdNames.length; i++){
     document.write("Score of "+ stdNames[i] + " is "+ stdScores[i] + ". Percentage : "+ perc[i] + "%<br>");
 }
+
 
 
 //Question 9
@@ -76,12 +77,19 @@ var deleteCount = prompt("How many colors you want to delete.");
 colorNames.splice(indexForDelete, deleteCount);
 document.write("<br><b>Delete color(s) : </b>"+ colorNames);
 
+
+
+
+
 //Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.
 
 var scores = [320, 230, 480, 120];
 document.write("<br><br><hr><br><b>Scores of Student : </b>"+ scores);
 scores.sort();
 document.write("<br><b>Ordered Scores of Students : </b>"+ scores);
+
+
+
 
 //Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
 
@@ -111,6 +119,7 @@ for(var k = devices.length-1; k >= 0; k--){
 }
 
 
+
 //Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:
 
 var phones = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
@@ -124,3 +133,21 @@ for(var m = 0; m < phones.length; m++){
 }
 
 document.write("</select>");
+
+
+////////////////////////Alternative method/////////////////////////
+    var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+    // Start of the dropdown menu HTML
+    var dropdownMenu = '<select name="manufacturers">';
+
+    // Loop through the array to create options
+    for (var i = 0; i < phoneManufacturers.length; i++) {
+            dropdownMenu += '<option value="' + phoneManufacturers[i] + '">' + phoneManufacturers[i] + '</option>';
+    }
+
+    // End of the dropdown menu HTML
+    dropdownMenu += '</select>';
+
+    // Display the dropdown menu
+    document.write(dropdownMenu);
