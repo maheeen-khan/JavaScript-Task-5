@@ -43,6 +43,59 @@ for(var i = 0; i< stdNames.length; i++){
 }
 
 
+//Question 9
+var colorNames = ["Red", "Blue", "Green", "Orange", "Yellow"];
+document.write("<br><hr><br><b>Original Color Array : </b>"+ colorNames);
+
+var userColorAtBegin = prompt("What color you want to add to the beginning");
+colorNames.unshift(userColorAtBegin);
+
+document.write("<br><b>Add Color to the beginning of the Array : </b>"+ colorNames);
+
+var userColorAtEnd = prompt("What color you want to add to the end");
+colorNames.push(userColorAtEnd);
+
+document.write("<br><b>Add Color to the end of the Array : </b>"+ colorNames);
+
+colorNames.pop();
+document.write("<br><b>After Removing Last element : </b>" + colorNames);
+
+colorNames.shift();
+document.write("<br><b>After Removing First element : </b>" + colorNames);
+
+var index = prompt("At which index you want to add a color.");
+var colorAtIndex = prompt("At what color you want to add.");
+
+colorNames.splice(index,0,colorAtIndex);
+
+document.write("<br><b>Add a color at specific index : </b>" + colorNames);
+
+var indexForDelete = prompt("At which index you want to delete color(s)");
+var deleteCount = prompt("How many colors you want to delete.");
+
+colorNames.splice(indexForDelete, deleteCount);
+document.write("<br><b>Delete color(s) : </b>"+ colorNames);
+
+//Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.
+
+var scores = [320, 230, 480, 120];
+document.write("<br><br><hr><br><b>Scores of Student : </b>"+ scores);
+scores.sort();
+document.write("<br><b>Ordered Scores of Students : </b>"+ scores);
+
+//Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
+
+var cityNames = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+document.write("<br><hr><br><b>Cities List : </b>"+ cityNames);
+document.write("<br><b>Selected Cities List : </b>"+ cityNames.slice(2,4));
+
+//Write a program to create a single string from the below mentioned array:
+
+var arr = ["This", "is", "my", "cat"];
+document.write("<br><hr><br><b>Array : </b>"+ arr);
+
+document.write("<br><b>String : </b>"+ arr.join(" "));
+
 
 
 
